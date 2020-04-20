@@ -1,0 +1,25 @@
+<div>
+    <form method="POST" class="form-horizontal" role="form">
+        {{ type_form.csrf_token }}
+
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-1">{{ type_form.type_name.label }}</div>
+            <div class="col-sm-4">
+                {{ type_form.type_name(class="form-control", placeholder="enter good name") }}
+                <p class="text-warning">
+                    {% for msg in type_form.type_name.errors %}
+                    {{msg}}
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-4">
+                {{ type_form.submit(class="btn btn-primary") }}
+            </div>
+        </div>
+    </form>
+</div>
+
+

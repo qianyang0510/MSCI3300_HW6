@@ -1,0 +1,1349 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Apr 18 01:03:13 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 17 April 2020 15:50:09
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: VM_16_14_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/bean
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/bean
+your processes number limit is 7266
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x16b9d40
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+failed to open python file app.py     #主程序的运行文件名
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9733)
+spawned uWSGI worker 1 (pid: 9734, cores: 10)
+spawned uWSGI worker 2 (pid: 9735, cores: 10)
+spawned uWSGI worker 3 (pid: 9736, cores: 10)
+spawned uWSGI worker 4 (pid: 9737, cores: 10)
+--- no python application found, check your startup logs for errors ---
+[pid: 9735|app: -1|req: -1/1] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:03:29 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+Sat Apr 18 01:05:46 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:05:46 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:05:46 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:05:46 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Apr 18 01:05:53 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 17 April 2020 15:50:09
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: VM_16_14_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/bean
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 7266
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x1e95dc0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+added /opt/bean/ to pythonpath.
+failed to open python file /opt/bean/app.py     #主程序的运行文件名
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 16066)
+spawned uWSGI worker 1 (pid: 16067, cores: 10)
+spawned uWSGI worker 2 (pid: 16068, cores: 10)
+spawned uWSGI worker 3 (pid: 16069, cores: 10)
+spawned uWSGI worker 4 (pid: 16070, cores: 10)
+--- no python application found, check your startup logs for errors ---
+[pid: 16070|app: -1|req: -1/1] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:05:57 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 16070|app: -1|req: -1/2] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:05:58 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 16067|app: -1|req: -1/3] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:05:58 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 16069|app: -1|req: -1/4] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:05:58 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 16068|app: -1|req: -1/5] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:05:58 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+invalid request block size: 21573 (max 4096)...skip
+Sat Apr 18 01:07:43 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:07:43 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:07:43 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:07:43 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Apr 18 01:07:53 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 17 April 2020 15:50:09
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: VM_16_14_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/bean
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 7266
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x1300e60
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+added /opt/bean/ to pythonpath.
+failed to open python file /opt/bean/app.py     #主程序的运行文件名
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20750)
+spawned uWSGI worker 1 (pid: 20751, cores: 10)
+spawned uWSGI worker 2 (pid: 20752, cores: 10)
+spawned uWSGI worker 3 (pid: 20753, cores: 10)
+spawned uWSGI worker 4 (pid: 20754, cores: 10)
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Apr 18 01:08:08 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 17 April 2020 15:50:09
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: VM_16_14_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/bean
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 7266
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.0:8080).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Apr 18 01:08:19 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 17 April 2020 15:50:09
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: VM_16_14_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/bean
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 7266
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.0:8080).
+bind(): Address already in use [core/socket.c line 769]
+Sat Apr 18 01:10:50 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:10:50 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:10:50 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:10:50 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Apr 18 01:11:00 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 17 April 2020 15:50:09
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: VM_16_14_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/bean
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/bean
+your processes number limit is 7266
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x2473e10
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+added /opt/bean/ to pythonpath.
+failed to open python file /opt/bean/app.py     #主程序的运行文件名
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28095)
+spawned uWSGI worker 1 (pid: 28096, cores: 10)
+spawned uWSGI worker 2 (pid: 28097, cores: 10)
+spawned uWSGI worker 3 (pid: 28098, cores: 10)
+spawned uWSGI worker 4 (pid: 28099, cores: 10)
+--- no python application found, check your startup logs for errors ---
+[pid: 28099|app: -1|req: -1/1] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:11:04 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+Sat Apr 18 01:16:18 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:16:18 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:16:18 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:16:18 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Apr 18 01:16:45 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 17 April 2020 17:13:50
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: VM_16_14_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/bean
+writing pidfile to uwsgi.pid
+detected binary path: /opt/bean/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/bean
+your processes number limit is 7266
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x1388eb0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+added /opt/bean/ to pythonpath.
+failed to open python file /opt/bean/app.py     #主程序的运行文件名
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9452)
+spawned uWSGI worker 1 (pid: 9453, cores: 10)
+spawned uWSGI worker 2 (pid: 9454, cores: 10)
+spawned uWSGI worker 3 (pid: 9455, cores: 10)
+spawned uWSGI worker 4 (pid: 9456, cores: 10)
+--- no python application found, check your startup logs for errors ---
+[pid: 9453|app: -1|req: -1/1] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:16:50 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+Sat Apr 18 01:19:41 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:19:41 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:19:41 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:19:41 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Apr 18 01:19:58 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 17 April 2020 17:13:50
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: VM_16_14_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/bean
+writing pidfile to uwsgi.pid
+detected binary path: /opt/bean/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/bean
+your processes number limit is 7266
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x24e0e90
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+added /opt/bean/ to pythonpath.
+failed to open python file app.py     #主程序的运行文件名
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 16923)
+spawned uWSGI worker 1 (pid: 16924, cores: 10)
+spawned uWSGI worker 2 (pid: 16925, cores: 10)
+spawned uWSGI worker 3 (pid: 16926, cores: 10)
+spawned uWSGI worker 4 (pid: 16927, cores: 10)
+--- no python application found, check your startup logs for errors ---
+[pid: 16926|app: -1|req: -1/1] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:20:17 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+Sat Apr 18 01:22:55 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:22:55 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:22:55 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:22:55 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Apr 18 01:22:59 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 17 April 2020 17:13:50
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: VM_16_14_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/bean
+writing pidfile to uwsgi.pid
+detected binary path: /opt/bean/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/bean
+your processes number limit is 7266
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+PEP 405 virtualenv detected: /opt/bean/venv
+Set PythonHome to /opt/bean/venv
+Python main interpreter initialized at 0x1a35f00
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+added /opt/bean/ to pythonpath.
+failed to open python file app.py     #主程序的运行文件名
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23963)
+spawned uWSGI worker 1 (pid: 23964, cores: 10)
+spawned uWSGI worker 2 (pid: 23965, cores: 10)
+spawned uWSGI worker 3 (pid: 23966, cores: 10)
+spawned uWSGI worker 4 (pid: 23967, cores: 10)
+--- no python application found, check your startup logs for errors ---
+[pid: 23964|app: -1|req: -1/1] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:23:14 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+Sat Apr 18 01:25:50 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:25:50 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:25:50 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:25:50 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Apr 18 01:26:00 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 17 April 2020 17:13:50
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: VM_16_14_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/bean
+writing pidfile to uwsgi.pid
+detected binary path: /opt/bean/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/bean
+your processes number limit is 7266
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x20ddf00
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+added /usr/local/lib/python3.6/site-packages/ to pythonpath.
+failed to open python file app.py     #主程序的运行文件名
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 30984)
+spawned uWSGI worker 1 (pid: 30985, cores: 10)
+spawned uWSGI worker 2 (pid: 30986, cores: 10)
+spawned uWSGI worker 3 (pid: 30987, cores: 10)
+spawned uWSGI worker 4 (pid: 30988, cores: 10)
+Sat Apr 18 01:26:53 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:26:53 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:26:53 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:26:53 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Apr 18 01:27:09 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 17 April 2020 17:13:50
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: VM_16_14_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/bean
+writing pidfile to uwsgi.pid
+detected binary path: /opt/bean/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/bean/
+your processes number limit is 7266
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x2718f00
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+added /usr/local/lib/python3.6/site-packages/ to pythonpath.
+failed to open python file app.py     #主程序的运行文件名
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1340)
+spawned uWSGI worker 1 (pid: 1341, cores: 10)
+spawned uWSGI worker 2 (pid: 1342, cores: 10)
+spawned uWSGI worker 3 (pid: 1343, cores: 10)
+spawned uWSGI worker 4 (pid: 1344, cores: 10)
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Apr 18 01:29:03 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 17 April 2020 17:13:50
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: VM_16_14_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/bean
+writing pidfile to uwsgi.pid
+detected binary path: /opt/bean/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/bean/
+your processes number limit is 7266
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.0:8080).
+bind(): Address already in use [core/socket.c line 769]
+Sat Apr 18 01:29:27 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:29:27 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:29:27 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:29:27 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Apr 18 01:29:34 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 17 April 2020 17:13:50
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: VM_16_14_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/bean
+writing pidfile to uwsgi.pid
+detected binary path: /opt/bean/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/bean/
+your processes number limit is 7266
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x216cf00
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+added /usr/local/lib/python3.6/site-packages/ to pythonpath.
+failed to open python file app.py     #主程序的运行文件名
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7020)
+spawned uWSGI worker 1 (pid: 7021, cores: 10)
+spawned uWSGI worker 2 (pid: 7022, cores: 10)
+spawned uWSGI worker 3 (pid: 7023, cores: 10)
+spawned uWSGI worker 4 (pid: 7024, cores: 10)
+invalid request block size: 21327 (max 4096)...skip
+invalid request block size: 20047 (max 4096)...skip
+invalid request block size: 16709 (max 4096)...skip
+-- unavailable modifier requested: 4 --
+Sat Apr 18 01:34:14 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:34:14 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:34:14 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:34:14 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Apr 18 01:34:20 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 17 April 2020 17:13:50
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: VM_16_14_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/bean
+writing pidfile to uwsgi.pid
+detected binary path: /opt/bean/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/bean/
+your processes number limit is 7266
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x222df00
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+added /usr/local/lib/python3.6/site-packages/ to pythonpath.
+failed to open python file app.py     #主程序的运行文件名
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 18195)
+spawned uWSGI worker 1 (pid: 18196, cores: 10)
+spawned uWSGI worker 2 (pid: 18197, cores: 10)
+spawned uWSGI worker 3 (pid: 18198, cores: 10)
+spawned uWSGI worker 4 (pid: 18199, cores: 10)
+--- no python application found, check your startup logs for errors ---
+[pid: 18196|app: -1|req: -1/1] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:34:24 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+Sat Apr 18 01:35:09 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:35:09 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:35:09 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:35:09 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Apr 18 01:35:15 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 17 April 2020 17:13:50
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: VM_16_14_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/bean
+writing pidfile to uwsgi.pid
+detected binary path: /opt/bean/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/bean/
+your processes number limit is 7266
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x19d1e30
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+failed to open python file app.py     #主程序的运行文件名
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20375)
+spawned uWSGI worker 1 (pid: 20376, cores: 10)
+spawned uWSGI worker 2 (pid: 20377, cores: 10)
+spawned uWSGI worker 3 (pid: 20378, cores: 10)
+spawned uWSGI worker 4 (pid: 20379, cores: 10)
+--- no python application found, check your startup logs for errors ---
+[pid: 20376|app: -1|req: -1/1] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:35:17 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 20378|app: -1|req: -1/2] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:35:17 2020] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+Sat Apr 18 01:42:56 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:42:56 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:42:56 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:42:56 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Apr 18 01:43:10 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 17 April 2020 17:13:50
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: VM_16_14_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/bean
+writing pidfile to uwsgi.pid
+detected binary path: /opt/bean/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/bean
+your processes number limit is 7266
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x258de20
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x258de20 pid: 6496 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6496)
+spawned uWSGI worker 1 (pid: 6524, cores: 10)
+spawned uWSGI worker 2 (pid: 6525, cores: 10)
+spawned uWSGI worker 3 (pid: 6526, cores: 10)
+spawned uWSGI worker 4 (pid: 6527, cores: 10)
+[pid: 6525|app: 0|req: 1/1] 219.140.141.13 () {40 vars in 714 bytes} [Sat Apr 18 01:43:39 2020] GET / => generated 12 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+[pid: 6525|app: 0|req: 2/2] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:44:12 2020] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+[pid: 6525|app: 0|req: 3/3] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:44:12 2020] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+[pid: 6527|app: 0|req: 1/4] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:44:12 2020] GET / => generated 12 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+[pid: 6526|app: 0|req: 1/5] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:44:12 2020] GET / => generated 12 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+Sat Apr 18 01:44:25 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:44:25 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:44:25 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:44:25 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:44:25 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:44:25 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:44:25 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 01:44:25 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Apr 18 01:44:36 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 17 April 2020 17:13:50
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: VM_16_14_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/bean
+writing pidfile to uwsgi.pid
+detected binary path: /opt/bean/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/bean
+your processes number limit is 7266
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x100ee20
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+/opt/bean/venv/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+/opt/bean/venv/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x100ee20 pid: 9949 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9949)
+spawned uWSGI worker 1 (pid: 9951, cores: 10)
+spawned uWSGI worker 2 (pid: 9953, cores: 10)
+spawned uWSGI worker 3 (pid: 9954, cores: 10)
+spawned uWSGI worker 4 (pid: 9955, cores: 10)
+[pid: 9954|app: 0|req: 1/1] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:44:37 2020] GET / => generated 4243 bytes in 71 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 9954|app: 0|req: 2/2] 219.140.141.13 () {40 vars in 666 bytes} [Sat Apr 18 01:44:37 2020] GET /static/css/bootstrap.min.css => generated 121200 bytes in 4 msecs via sendfile() (HTTP/1.1 200) 7 headers in 282 bytes (0 switches on core 3)
+[pid: 9955|app: 0|req: 1/3] 219.140.141.13 () {40 vars in 641 bytes} [Sat Apr 18 01:44:37 2020] GET /static/js/jquery.min.js => generated 84286 bytes in 9 msecs via sendfile() (HTTP/1.1 200) 7 headers in 295 bytes (0 switches on core 0)
+[pid: 9954|app: 0|req: 3/4] 219.140.141.13 () {40 vars in 647 bytes} [Sat Apr 18 01:44:37 2020] GET /static/js/bootstrap.min.js => generated 37045 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 7 headers in 295 bytes (0 switches on core 5)
+[pid: 9954|app: 0|req: 4/5] 219.140.141.13 () {42 vars in 752 bytes} [Sat Apr 18 01:44:39 2020] GET /static/fonts/glyphicons-halflings-regular.woff2 => generated 18028 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 282 bytes (0 switches on core 8)
+[pid: 9954|app: 0|req: 5/6] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:44:53 2020] GET / => generated 7706 bytes in 18 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 7)
+[pid: 9954|app: 0|req: 6/7] 219.140.141.13 () {42 vars in 745 bytes} [Sat Apr 18 01:44:54 2020] GET / => generated 7706 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 9)
+[pid: 9954|app: 0|req: 7/8] 219.140.141.13 () {40 vars in 714 bytes} [Sat Apr 18 01:45:31 2020] GET / => generated 7706 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 6)
+[pid: 9954|app: 0|req: 8/9] 80.82.70.187 () {32 vars in 421 bytes} [Sat Apr 18 03:20:45 2020] GET /cache/global/img/gs.gif => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+[pid: 9954|app: 0|req: 9/10] 91.83.149.222 () {32 vars in 475 bytes} [Sat Apr 18 03:46:56 2020] GET /phpmyadmin/ => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 1)
+[pid: 9954|app: 0|req: 10/11] 92.118.161.17 () {30 vars in 439 bytes} [Sat Apr 18 04:45:35 2020] GET / => generated 7706 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 9955|app: 0|req: 2/12] 185.149.246.109 () {32 vars in 453 bytes} [Sat Apr 18 04:56:18 2020] GET / => generated 7706 bytes in 72 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 7)
+[pid: 9955|app: 0|req: 3/13] 45.146.253.35 () {30 vars in 485 bytes} [Sat Apr 18 05:11:46 2020] GET /phpmyadmin/scripts/setup.php => generated 232 bytes in 1 msecs (HTTP/1.0 404) 2 headers in 87 bytes (1 switches on core 2)
+[pid: 9955|app: 0|req: 4/14] 45.146.253.35 () {30 vars in 485 bytes} [Sat Apr 18 05:12:28 2020] GET /phpMyAdmin/scripts/setup.php => generated 232 bytes in 0 msecs (HTTP/1.0 404) 2 headers in 87 bytes (1 switches on core 2)
+[pid: 9955|app: 0|req: 5/15] 45.146.253.35 () {30 vars in 471 bytes} [Sat Apr 18 05:13:12 2020] GET /pma/scripts/setup.php => generated 232 bytes in 0 msecs (HTTP/1.0 404) 2 headers in 87 bytes (1 switches on core 2)
+[pid: 9955|app: 0|req: 6/16] 45.146.253.35 () {30 vars in 475 bytes} [Sat Apr 18 05:13:55 2020] GET /mysql/scripts/setup.php => generated 232 bytes in 0 msecs (HTTP/1.0 404) 2 headers in 87 bytes (1 switches on core 2)
+[pid: 9955|app: 0|req: 7/17] 45.146.253.35 () {30 vars in 479 bytes} [Sat Apr 18 05:14:38 2020] GET /myadmin/scripts/setup.php => generated 232 bytes in 1 msecs (HTTP/1.0 404) 2 headers in 87 bytes (1 switches on core 2)
+[pid: 9955|app: 0|req: 8/18] 45.146.253.35 () {30 vars in 481 bytes} [Sat Apr 18 05:15:21 2020] GET /sqladmin/scripts/setup.php => generated 232 bytes in 0 msecs (HTTP/1.0 404) 2 headers in 87 bytes (1 switches on core 2)
+[pid: 9955|app: 0|req: 9/19] 45.146.253.35 () {30 vars in 469 bytes} [Sat Apr 18 05:16:05 2020] GET /db/scripts/setup.php => generated 232 bytes in 0 msecs (HTTP/1.0 404) 2 headers in 87 bytes (1 switches on core 2)
+[pid: 9955|app: 0|req: 10/20] 162.243.131.10 () {34 vars in 410 bytes} [Sat Apr 18 06:43:33 2020] GET /portal/redlion => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 2)
+[pid: 9955|app: 0|req: 11/21] 191.193.243.150 () {32 vars in 453 bytes} [Sat Apr 18 07:59:04 2020] GET / => generated 7706 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 2)
+[pid: 9955|app: 0|req: 12/22] 191.193.243.150 () {32 vars in 453 bytes} [Sat Apr 18 07:59:04 2020] GET / => generated 7706 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 7)
+[pid: 9955|app: 0|req: 13/23] 61.160.251.82 () {34 vars in 488 bytes} [Sat Apr 18 08:15:41 2020] GET /TP/public/index.php => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 3)
+[pid: 9954|app: 0|req: 11/24] 61.160.251.82 () {34 vars in 474 bytes} [Sat Apr 18 08:15:42 2020] GET /TP/index.php => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 9953|app: 0|req: 1/25] 61.160.251.82 () {34 vars in 510 bytes} [Sat Apr 18 08:15:42 2020] GET /thinkphp/html/public/index.php => generated 232 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 9951|app: 0|req: 1/26] 61.160.251.82 () {34 vars in 492 bytes} [Sat Apr 18 08:15:42 2020] GET /html/public/index.php => generated 232 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 9955|app: 0|req: 14/27] 61.160.251.82 () {34 vars in 482 bytes} [Sat Apr 18 08:15:42 2020] GET /public/index.php => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 3)
+[pid: 9954|app: 0|req: 12/28] 61.160.251.82 () {34 vars in 498 bytes} [Sat Apr 18 08:15:42 2020] GET /TP/html/public/index.php => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 9954|app: 0|req: 13/29] 61.160.251.82 () {34 vars in 470 bytes} [Sat Apr 18 08:15:42 2020] GET /elrekt.php => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 9955|app: 0|req: 15/30] 61.160.251.82 () {34 vars in 468 bytes} [Sat Apr 18 08:15:42 2020] GET /index.php => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 3)
+[pid: 9954|app: 0|req: 14/31] 61.160.251.82 () {34 vars in 453 bytes} [Sat Apr 18 08:15:42 2020] GET / => generated 4243 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 9954|app: 0|req: 15/32] 138.255.151.117 () {32 vars in 453 bytes} [Sat Apr 18 09:28:42 2020] GET / => generated 7706 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 7)
+[2020-04-18 10:10:33,401] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    cursor, statement, parameters, context
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/default.py", line 590, in do_execute
+    cursor.execute(statement, parameters)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 657, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 707, in _read_bytes
+    CR.CR_SERVER_LOST, "Lost connection to MySQL server during query")
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./blueprint/index.py", line 13, in index
+    goods = Good.query.all()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3246, in all
+    return list(self)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3405, in __iter__
+    return self._execute_and_instances(context)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3430, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 984, in execute
+    return meth(self, multiparams, params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/sql/elements.py", line 293, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1103, in _execute_clauseelement
+    distilled_params,
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1288, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1482, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    cursor, statement, parameters, context
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/default.py", line 590, in do_execute
+    cursor.execute(statement, parameters)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 657, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 707, in _read_bytes
+    CR.CR_SERVER_LOST, "Lost connection to MySQL server during query")
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+[SQL: SELECT tbl_good.id AS tbl_good_id, tbl_good.good_name AS tbl_good_good_name, tbl_good.type AS tbl_good_type, tbl_good.price AS tbl_good_price, tbl_good.stock AS tbl_good_stock 
+FROM tbl_good]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+[pid: 9954|app: 0|req: 16/33] 87.255.206.58 () {32 vars in 451 bytes} [Sat Apr 18 10:10:33 2020] GET / => generated 290 bytes in 44 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 9)
+[2020-04-18 10:11:01,307] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    cursor, statement, parameters, context
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/default.py", line 590, in do_execute
+    cursor.execute(statement, parameters)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 657, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 707, in _read_bytes
+    CR.CR_SERVER_LOST, "Lost connection to MySQL server during query")
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./blueprint/index.py", line 13, in index
+    goods = Good.query.all()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3246, in all
+    return list(self)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3405, in __iter__
+    return self._execute_and_instances(context)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3430, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 984, in execute
+    return meth(self, multiparams, params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/sql/elements.py", line 293, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1103, in _execute_clauseelement
+    distilled_params,
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1288, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1482, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    cursor, statement, parameters, context
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/default.py", line 590, in do_execute
+    cursor.execute(statement, parameters)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 657, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/opt/bean/venv/lib/python3.6/site-packages/pymysql/connections.py", line 707, in _read_bytes
+    CR.CR_SERVER_LOST, "Lost connection to MySQL server during query")
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+[SQL: SELECT tbl_good.id AS tbl_good_id, tbl_good.good_name AS tbl_good_good_name, tbl_good.type AS tbl_good_type, tbl_good.price AS tbl_good_price, tbl_good.stock AS tbl_good_stock 
+FROM tbl_good]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+[pid: 9954|app: 0|req: 17/34] 125.119.14.96 () {40 vars in 908 bytes} [Sat Apr 18 10:11:01 2020] GET / => generated 290 bytes in 3 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 6)
+[pid: 9954|app: 0|req: 18/35] 125.119.14.96 () {40 vars in 875 bytes} [Sat Apr 18 10:11:02 2020] GET /favicon.ico => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 6)
+[2020-04-18 10:11:08,143] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1173, in _execute_context
+    conn = self._revalidate_connection()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 457, in _revalidate_connection
+    "Can't reconnect until invalid "
+sqlalchemy.exc.InvalidRequestError: Can't reconnect until invalid transaction is rolled back
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./blueprint/index.py", line 13, in index
+    goods = Good.query.all()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3246, in all
+    return list(self)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3405, in __iter__
+    return self._execute_and_instances(context)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3430, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 984, in execute
+    return meth(self, multiparams, params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/sql/elements.py", line 293, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1103, in _execute_clauseelement
+    distilled_params,
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1178, in _execute_context
+    e, util.text_type(statement), parameters, None, None
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1482, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1173, in _execute_context
+    conn = self._revalidate_connection()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 457, in _revalidate_connection
+    "Can't reconnect until invalid "
+sqlalchemy.exc.StatementError: (sqlalchemy.exc.InvalidRequestError) Can't reconnect until invalid transaction is rolled back
+[SQL: SELECT tbl_good.id AS tbl_good_id, tbl_good.good_name AS tbl_good_good_name, tbl_good.type AS tbl_good_type, tbl_good.price AS tbl_good_price, tbl_good.stock AS tbl_good_stock 
+FROM tbl_good]
+[parameters: [immutabledict({})]]
+[pid: 9954|app: 0|req: 19/36] 125.119.14.96 () {40 vars in 908 bytes} [Sat Apr 18 10:11:08 2020] GET / => generated 290 bytes in 2 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 6)
+[pid: 9951|app: 0|req: 2/37] 125.119.14.96 () {40 vars in 875 bytes} [Sat Apr 18 10:11:08 2020] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[2020-04-18 10:13:22,779] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1173, in _execute_context
+    conn = self._revalidate_connection()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 457, in _revalidate_connection
+    "Can't reconnect until invalid "
+sqlalchemy.exc.InvalidRequestError: Can't reconnect until invalid transaction is rolled back
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./blueprint/index.py", line 13, in index
+    goods = Good.query.all()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3246, in all
+    return list(self)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3405, in __iter__
+    return self._execute_and_instances(context)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3430, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 984, in execute
+    return meth(self, multiparams, params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/sql/elements.py", line 293, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1103, in _execute_clauseelement
+    distilled_params,
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1178, in _execute_context
+    e, util.text_type(statement), parameters, None, None
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1482, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1173, in _execute_context
+    conn = self._revalidate_connection()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 457, in _revalidate_connection
+    "Can't reconnect until invalid "
+sqlalchemy.exc.StatementError: (sqlalchemy.exc.InvalidRequestError) Can't reconnect until invalid transaction is rolled back
+[SQL: SELECT tbl_good.id AS tbl_good_id, tbl_good.good_name AS tbl_good_good_name, tbl_good.type AS tbl_good_type, tbl_good.price AS tbl_good_price, tbl_good.stock AS tbl_good_stock 
+FROM tbl_good]
+[parameters: [immutabledict({})]]
+[pid: 9954|app: 0|req: 20/38] 125.119.14.96 () {40 vars in 740 bytes} [Sat Apr 18 10:13:22 2020] GET / => generated 290 bytes in 2 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 6)
+[pid: 9955|app: 0|req: 16/39] 125.119.14.96 () {40 vars in 679 bytes} [Sat Apr 18 10:13:23 2020] GET /favicon.ico => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 3)
+[2020-04-18 10:56:54,849] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1173, in _execute_context
+    conn = self._revalidate_connection()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 457, in _revalidate_connection
+    "Can't reconnect until invalid "
+sqlalchemy.exc.InvalidRequestError: Can't reconnect until invalid transaction is rolled back
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./blueprint/index.py", line 13, in index
+    goods = Good.query.all()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3246, in all
+    return list(self)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3405, in __iter__
+    return self._execute_and_instances(context)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3430, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 984, in execute
+    return meth(self, multiparams, params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/sql/elements.py", line 293, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1103, in _execute_clauseelement
+    distilled_params,
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1178, in _execute_context
+    e, util.text_type(statement), parameters, None, None
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1482, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1173, in _execute_context
+    conn = self._revalidate_connection()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 457, in _revalidate_connection
+    "Can't reconnect until invalid "
+sqlalchemy.exc.StatementError: (sqlalchemy.exc.InvalidRequestError) Can't reconnect until invalid transaction is rolled back
+[SQL: SELECT tbl_good.id AS tbl_good_id, tbl_good.good_name AS tbl_good_good_name, tbl_good.type AS tbl_good_type, tbl_good.price AS tbl_good_price, tbl_good.stock AS tbl_good_stock 
+FROM tbl_good]
+[parameters: [immutabledict({})]]
+[pid: 9954|app: 0|req: 21/40] 2.184.44.249 () {32 vars in 451 bytes} [Sat Apr 18 10:56:54 2020] GET / => generated 290 bytes in 2 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 6)
+[2020-04-18 11:23:41,469] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1173, in _execute_context
+    conn = self._revalidate_connection()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 457, in _revalidate_connection
+    "Can't reconnect until invalid "
+sqlalchemy.exc.InvalidRequestError: Can't reconnect until invalid transaction is rolled back
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./blueprint/index.py", line 13, in index
+    goods = Good.query.all()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3246, in all
+    return list(self)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3405, in __iter__
+    return self._execute_and_instances(context)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3430, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 984, in execute
+    return meth(self, multiparams, params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/sql/elements.py", line 293, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1103, in _execute_clauseelement
+    distilled_params,
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1178, in _execute_context
+    e, util.text_type(statement), parameters, None, None
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1482, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1173, in _execute_context
+    conn = self._revalidate_connection()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 457, in _revalidate_connection
+    "Can't reconnect until invalid "
+sqlalchemy.exc.StatementError: (sqlalchemy.exc.InvalidRequestError) Can't reconnect until invalid transaction is rolled back
+[SQL: SELECT tbl_good.id AS tbl_good_id, tbl_good.good_name AS tbl_good_good_name, tbl_good.type AS tbl_good_type, tbl_good.price AS tbl_good_price, tbl_good.stock AS tbl_good_stock 
+FROM tbl_good]
+[parameters: [immutabledict({})]]
+[pid: 9954|app: 0|req: 22/41] 223.104.246.26 () {42 vars in 772 bytes} [Sat Apr 18 11:23:41 2020] GET / => generated 290 bytes in 2 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 6)
+[2020-04-18 11:24:15,299] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1173, in _execute_context
+    conn = self._revalidate_connection()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 457, in _revalidate_connection
+    "Can't reconnect until invalid "
+sqlalchemy.exc.InvalidRequestError: Can't reconnect until invalid transaction is rolled back
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./blueprint/index.py", line 13, in index
+    goods = Good.query.all()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3246, in all
+    return list(self)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3405, in __iter__
+    return self._execute_and_instances(context)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3430, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 984, in execute
+    return meth(self, multiparams, params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/sql/elements.py", line 293, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1103, in _execute_clauseelement
+    distilled_params,
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1178, in _execute_context
+    e, util.text_type(statement), parameters, None, None
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1482, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1173, in _execute_context
+    conn = self._revalidate_connection()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 457, in _revalidate_connection
+    "Can't reconnect until invalid "
+sqlalchemy.exc.StatementError: (sqlalchemy.exc.InvalidRequestError) Can't reconnect until invalid transaction is rolled back
+[SQL: SELECT tbl_good.id AS tbl_good_id, tbl_good.good_name AS tbl_good_good_name, tbl_good.type AS tbl_good_type, tbl_good.price AS tbl_good_price, tbl_good.stock AS tbl_good_stock 
+FROM tbl_good]
+[parameters: [immutabledict({})]]
+[pid: 9954|app: 0|req: 23/42] 171.82.180.38 () {40 vars in 877 bytes} [Sat Apr 18 11:24:15 2020] GET / => generated 290 bytes in 2 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 6)
+[pid: 9951|app: 0|req: 3/43] 171.82.180.38 () {40 vars in 844 bytes} [Sat Apr 18 11:24:15 2020] GET /favicon.ico => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 0)
+[2020-04-18 11:46:12,727] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1173, in _execute_context
+    conn = self._revalidate_connection()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 457, in _revalidate_connection
+    "Can't reconnect until invalid "
+sqlalchemy.exc.InvalidRequestError: Can't reconnect until invalid transaction is rolled back
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/bean/venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./blueprint/index.py", line 13, in index
+    goods = Good.query.all()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3246, in all
+    return list(self)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3405, in __iter__
+    return self._execute_and_instances(context)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/orm/query.py", line 3430, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 984, in execute
+    return meth(self, multiparams, params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/sql/elements.py", line 293, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1103, in _execute_clauseelement
+    distilled_params,
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1178, in _execute_context
+    e, util.text_type(statement), parameters, None, None
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1482, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/util/compat.py", line 178, in raise_
+    raise exception
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 1173, in _execute_context
+    conn = self._revalidate_connection()
+  File "/opt/bean/venv/lib64/python3.6/site-packages/sqlalchemy/engine/base.py", line 457, in _revalidate_connection
+    "Can't reconnect until invalid "
+sqlalchemy.exc.StatementError: (sqlalchemy.exc.InvalidRequestError) Can't reconnect until invalid transaction is rolled back
+[SQL: SELECT tbl_good.id AS tbl_good_id, tbl_good.good_name AS tbl_good_good_name, tbl_good.type AS tbl_good_type, tbl_good.price AS tbl_good_price, tbl_good.stock AS tbl_good_stock 
+FROM tbl_good]
+[parameters: [immutabledict({})]]
+[pid: 9954|app: 0|req: 24/44] 112.10.64.62 () {40 vars in 650 bytes} [Sat Apr 18 11:46:12 2020] GET / => generated 290 bytes in 2 msecs (HTTP/1.1 500) 2 headers in 99 bytes (1 switches on core 6)
+[pid: 9954|app: 0|req: 25/45] 112.10.64.62 () {38 vars in 561 bytes} [Sat Apr 18 11:46:13 2020] GET /favicon.ico => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 6)
+Sat Apr 18 11:48:07 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 11:48:07 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 11:48:07 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 11:48:07 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 11:48:07 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 11:48:07 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 11:48:07 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Apr 18 11:48:07 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Apr 18 11:48:15 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 17 April 2020 17:13:50
+os: Linux-3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019
+nodename: VM_16_14_centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/bean
+writing pidfile to uwsgi.pid
+detected binary path: /opt/bean/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /opt/bean
+your processes number limit is 7266
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Python main interpreter initialized at 0x2359e20
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+/opt/bean/venv/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+/opt/bean/venv/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py:835: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  'SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and '
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x2359e20 pid: 17740 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17740)
+spawned uWSGI worker 1 (pid: 17742, cores: 10)
+spawned uWSGI worker 2 (pid: 17743, cores: 10)
+spawned uWSGI worker 3 (pid: 17744, cores: 10)
+spawned uWSGI worker 4 (pid: 17745, cores: 10)
+[pid: 17744|app: 0|req: 1/1] 112.10.64.62 () {42 vars in 681 bytes} [Sat Apr 18 11:48:17 2020] GET / => generated 7706 bytes in 79 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 17744|app: 0|req: 2/2] 112.10.64.62 () {42 vars in 669 bytes} [Sat Apr 18 11:48:17 2020] GET /static/js/jquery.min.js => generated 84286 bytes in 6 msecs via sendfile() (HTTP/1.1 200) 7 headers in 295 bytes (0 switches on core 3)
+[pid: 17744|app: 0|req: 3/3] 112.10.64.62 () {42 vars in 675 bytes} [Sat Apr 18 11:48:17 2020] GET /static/js/bootstrap.min.js => generated 37045 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 7 headers in 295 bytes (0 switches on core 5)
+[pid: 17745|app: 0|req: 1/4] 112.10.64.62 () {42 vars in 694 bytes} [Sat Apr 18 11:48:17 2020] GET /static/css/bootstrap.min.css => generated 121200 bytes in 9 msecs via sendfile() (HTTP/1.1 200) 7 headers in 282 bytes (0 switches on core 0)
+[pid: 17744|app: 0|req: 4/5] 112.10.64.62 () {38 vars in 561 bytes} [Sat Apr 18 11:48:18 2020] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 87 bytes (1 switches on core 8)
+[pid: 17745|app: 0|req: 2/6] 112.10.64.62 () {42 vars in 681 bytes} [Sat Apr 18 11:48:18 2020] GET / => generated 7706 bytes in 69 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 7)
+[pid: 17744|app: 0|req: 5/7] 112.10.64.62 () {46 vars in 743 bytes} [Sat Apr 18 11:48:19 2020] GET /static/js/jquery.min.js => generated 21321 bytes in 1 msecs (HTTP/1.1 206) 9 headers in 370 bytes (3 switches on core 8)
+[pid: 17744|app: 0|req: 6/8] 112.10.64.62 () {46 vars in 749 bytes} [Sat Apr 18 11:48:19 2020] GET /static/js/bootstrap.min.js => generated 16440 bytes in 0 msecs (HTTP/1.1 206) 9 headers in 370 bytes (2 switches on core 8)
+[pid: 17742|app: 0|req: 1/9] 112.10.64.62 () {46 vars in 802 bytes} [Sat Apr 18 11:48:19 2020] GET /static/css/bootstrap.min.css => generated 0 bytes in 4 msecs (HTTP/1.1 304) 4 headers in 183 bytes (0 switches on core 0)
+[pid: 17743|app: 0|req: 1/10] 112.10.64.62 () {42 vars in 717 bytes} [Sat Apr 18 11:48:19 2020] GET /static/fonts/glyphicons-halflings-regular.woff2 => generated 18028 bytes in 6 msecs via sendfile() (HTTP/1.1 200) 7 headers in 282 bytes (0 switches on core 0)
+[pid: 17744|app: 0|req: 7/11] 112.10.64.62 () {42 vars in 709 bytes} [Sat Apr 18 11:48:26 2020] GET /good/view/1 => generated 8194 bytes in 41 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 8)
+[pid: 17744|app: 0|req: 8/12] 112.10.64.62 () {42 vars in 760 bytes} [Sat Apr 18 11:48:29 2020] GET /view_by_type/%E6%95%B0%E7%A0%81%E7%B1%BB => generated 5331 bytes in 22 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 6)
+[pid: 17744|app: 0|req: 9/13] 112.10.64.62 () {42 vars in 789 bytes} [Sat Apr 18 11:48:31 2020] GET /view_by_type/%E9%9B%B6%E9%A3%9F%E7%B1%BB => generated 5039 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 17744|app: 0|req: 10/14] 112.10.64.62 () {42 vars in 789 bytes} [Sat Apr 18 11:48:35 2020] GET /view_by_type/%E9%A5%AE%E6%96%99%E7%B1%BB => generated 5036 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 2)
+[pid: 17744|app: 0|req: 11/15] 112.10.64.62 () {42 vars in 789 bytes} [Sat Apr 18 11:48:36 2020] GET /view_by_type/%E4%BD%93%E8%82%B2%E7%B1%BB => generated 5638 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 4)
+[pid: 17745|app: 0|req: 3/16] 112.10.64.62 () {42 vars in 789 bytes} [Sat Apr 18 11:48:38 2020] GET /view_by_type/%E9%9B%B6%E9%A3%9F%E7%B1%BB => generated 5039 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 2)
+[pid: 17745|app: 0|req: 4/17] 112.10.64.62 () {42 vars in 789 bytes} [Sat Apr 18 11:48:39 2020] GET /view_by_type/%E6%B0%B4%E6%9E%9C%E7%B1%BB => generated 5626 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 3)
+[pid: 17745|app: 0|req: 5/18] 112.10.64.62 () {42 vars in 749 bytes} [Sat Apr 18 11:49:14 2020] GET /good/view/1 => generated 8194 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 17745|app: 0|req: 6/19] 112.10.64.62 () {40 vars in 650 bytes} [Sat Apr 18 11:53:56 2020] GET / => generated 7706 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 4)
+[pid: 17745|app: 0|req: 7/20] 112.10.64.62 () {42 vars in 749 bytes} [Sat Apr 18 11:53:58 2020] GET /view_by_type/%E6%B0%B4%E6%9E%9C%E7%B1%BB => generated 5626 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 5)
+[pid: 17745|app: 0|req: 8/21] 112.10.64.62 () {42 vars in 789 bytes} [Sat Apr 18 11:53:59 2020] GET /view_by_type/%E6%95%B0%E7%A0%81%E7%B1%BB => generated 5331 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 6)
+[pid: 17745|app: 0|req: 9/22] 112.10.64.62 () {42 vars in 727 bytes} [Sat Apr 18 11:57:38 2020] GET / => generated 7706 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 9)
+./blueprint/user.py:41: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  user_form = UserForm()
+[pid: 17745|app: 0|req: 10/23] 112.10.64.62 () {42 vars in 707 bytes} [Sat Apr 18 12:01:36 2020] GET /user/login => generated 6054 bytes in 24 msecs (HTTP/1.1 200) 4 headers in 246 bytes (1 switches on core 8)
+[pid: 17743|app: 0|req: 2/24] 112.10.64.62 () {42 vars in 826 bytes} [Sat Apr 18 12:01:36 2020] GET /static/pic/shopping.jpg => generated 7969 bytes in 4 msecs via sendfile() (HTTP/1.1 200) 7 headers in 266 bytes (0 switches on core 1)
+./blueprint/user.py:41: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  user_form = UserForm()
+[pid: 17743|app: 0|req: 3/25] 112.10.64.62 () {50 vars in 999 bytes} [Sat Apr 18 12:02:04 2020] POST /user/login => generated 209 bytes in 62 msecs (HTTP/1.1 302) 5 headers in 386 bytes (1 switches on core 3)
+[pid: 17743|app: 0|req: 4/26] 112.10.64.62 () {46 vars in 967 bytes} [Sat Apr 18 12:02:04 2020] GET / => generated 7970 bytes in 62 msecs (HTTP/1.1 200) 4 headers in 273 bytes (1 switches on core 6)
+[pid: 17743|app: 0|req: 5/27] 112.10.64.62 () {44 vars in 910 bytes} [Sat Apr 18 12:02:09 2020] GET /view_by_type/%E6%B0%B4%E6%9E%9C%E7%B1%BB => generated 5693 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 7)
+[pid: 17743|app: 0|req: 6/28] 112.10.64.62 () {44 vars in 950 bytes} [Sat Apr 18 12:02:13 2020] GET /view_by_type/%E4%BD%93%E8%82%B2%E7%B1%BB => generated 5696 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 5)
+./blueprint/good.py:15: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  good_form = GoodForm()
+[pid: 17743|app: 0|req: 7/29] 112.10.64.62 () {44 vars in 904 bytes} [Sat Apr 18 12:02:16 2020] GET /good/add => generated 5214 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 8)
+[pid: 17743|app: 0|req: 8/30] 112.10.64.62 () {44 vars in 950 bytes} [Sat Apr 18 12:02:20 2020] GET /view_by_type/%E4%BD%93%E8%82%B2%E7%B1%BB => generated 5696 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 4)
+[pid: 17743|app: 0|req: 9/31] 114.134.186.84 () {32 vars in 453 bytes} [Sat Apr 18 12:18:21 2020] GET / => generated 7706 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 9)

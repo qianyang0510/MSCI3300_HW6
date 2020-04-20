@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+
+{% block title -%}pay{% endblock title %}
+
+{% block body -%}
+<div class="container">
+    {% include "include/navigation.html" %}
+    {% include "include/form_payment.html" %}
+    {% include "include/footer.html" %}
+</div>
+{%- endblock body %}

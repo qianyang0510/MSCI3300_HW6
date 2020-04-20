@@ -1,0 +1,30 @@
+<h1 class="text-danger">Browse merchandise</h1>
+<div data-spy="scroll" data-target="#navbar-example" data-offset="0"
+     style="height:420px;overflow:auto; position: relative;background-color:WhiteSmoke">
+    <table class="table">
+        <caption></caption>
+        <thead>
+        <tr>
+            <th>Good ID</th>
+            <th>Good Info</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {% for good in goods %}
+        <tr>
+            <td>{{ good.id }}</td>
+            <td><a href="{{ url_for('app_good.view',good_id=good.id) }}  ">{{ good.good_name }}</a></td>
+            {% if user_name != "mike_admin"%}
+            <td><a href="{{ url_for('app_cart.add',good_id=good.id) }}">add to cart</a></td>
+            <td><a href=" {{ url_for('app_payment.add_directly',good_name=good.good_name) }}">buy</a></td>
+            {% else %}
+            <td><a href="{{  url_for('app_good.add')  }}">add new good</a></td>
+            <!--<td><a class="disabled" href="/index/update?good_id={{ good.id }}">更新商品</a></td>-->
+            {% endif %}
+        </tr>
+        {% endfor %}
+        </tbody>
+
+    </table>
+</div>

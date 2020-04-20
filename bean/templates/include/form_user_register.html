@@ -1,0 +1,90 @@
+<div>
+    <br/>
+    {% for i in range(55) %}
+    &nbsp;
+    {% endfor %}
+    <img class="img-circle" src="{{  url_for('static',filename='pic/shopping.jpg') }}"
+         style="height:10%;width:20%"><br/><br/>
+    <form method="POST" class="form-horizontal" role="form">
+        {{ user_form.csrf_token }}
+
+        <div class="form-group">
+
+            <div class="col-sm-offset-3 col-sm-1">{{ user_form.user_name.label }}</div>
+            <div class="col-sm-4">
+                {{ user_form.user_name(class="form-control", placeholder="user name") }}
+                <p class="text-warning">
+                    {% for msg in user_form.user_name.errors %}
+                    {{msg}}
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-1">{{ user_form.password.label }}</div>
+            <div class="col-sm-4">
+                {{ user_form.password(class="form-control", placeholder="password") }}
+                <p class="text-warning">
+                    {% for msg in user_form.password.errors %}
+                    {{msg}}
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-1">{{ user_form.check_password.label }}</div>
+            <div class="col-sm-4">
+                {{ user_form.check_password(class="form-control", placeholder="confirm password") }}
+                <p class="text-warning">
+                    {% for msg in user_form.check_password.errors %}
+                    {{msg}}
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-1">{{ user_form.pay_password.label }}</div>
+            <div class="col-sm-4">
+                {{ user_form.pay_password(class="form-control", placeholder="pay password") }}
+                <p class="text-warning">
+                    {% for msg in user_form.pay_password.errors %}
+                    {{msg}}
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-1">{{ user_form.check_pay_password.label }}</div>
+            <div class="col-sm-4">
+                {{ user_form.check_pay_password(class="form-control", placeholder="confirm pay password") }}
+                <p class="text-warning">
+                    {% for msg in user_form.check_pay_password.errors %}
+                    {{msg}}
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-4 ">
+                {{ user_form.remember_me(class="disabled")}}{{ user_form.remember_me.label }}
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-4">
+                {{ user_form.submit(class="btn btn-primary") }}
+            </div>
+        </div>
+    </form>
+</div>
+
+
+

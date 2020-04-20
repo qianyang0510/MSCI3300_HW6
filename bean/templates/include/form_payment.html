@@ -1,0 +1,49 @@
+<div class="table-responsive">
+    <table class="table table-condensed table-hover table-bordered">
+        <caption class="text-center">pay info</caption>
+        <thead></thead>
+        <tbody>
+
+        <tr>
+            <td  class="text-center">user</td>
+            <td  class="text-left">{{ user_name }}</td>
+
+        </tr>
+
+        <tr class="warning">
+            <td  class="text-center">good name</td>
+            <td  class="warning text-left">{{ good_name }}</td>
+        </tr>
+
+        <tr class="danger">
+            <td  class="text-center">good price</td>
+            <td  class="warning text-left">{{ price }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="col-sm-12">
+    <form method="POST" class="form-horizontal" role="form">
+        {{ pay_form.csrf_token }}
+
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-1">{{ pay_form.pay_password.label }}</div>
+            <div class="col-sm-4">
+                {{ pay_form.pay_password(class="form-control", placeholder="pay password") }}
+                <p class="text-warning">
+                    {% for msg in pay_form.pay_password.errors %}
+                    {{msg}}
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-4">
+                {{ pay_form.submit(class="btn btn-primary") }}
+            </div>
+        </div>
+    </form>
+</div>
+

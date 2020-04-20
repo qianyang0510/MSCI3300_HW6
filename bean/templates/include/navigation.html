@@ -1,0 +1,71 @@
+﻿{% for msg in get_flashed_messages() %}
+<p class="text-center alert alert-danger">
+    <button type="button" class="close" data-dismiss="alert"
+            aria-hidden="true">
+        &times;
+    </button>
+    {{ msg }}
+</p>
+{% endfor %}
+
+<nav class="navbar navbar-primary" role="navigation" style="background-color:GhostWhite;margin:5px">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{ url_for('app_index.index') }}"><span
+                    class="glyphicon glyphicon-home"></span>index</a>
+        </div>
+
+        <ul class="nav navbar-nav nav-pills">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <span class="glyphicon glyphicon-map-marker"></span>personal info
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    {% if user_name == "guest" or user_name == "mike_admin" %}
+                    {% else %}
+                    <li><a href="{{ url_for('app_index.payment_records') }}">record</a></li>
+                    {% endif %}
+                    <li><a href="#">first</a></li>
+                    <li><a href="#">second</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">third</a></li>
+
+                </ul>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>shop</a></li>
+        </ul>
+
+
+        <ul class="nav navbar-nav nav-pills navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <span class="glyphicon glyphicon-user"></span>
+                    {{ user_name|default("guest") }}
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="{{ url_for('app_user.register') }}"><span class="glyphicon glyphicon-heart"></span>
+                        register</a>
+
+                    <li><a href="{{ url_for('app_user.login') }}"><span class="glyphicon glyphicon-log-in"></span>
+                        login</a>
+                    </li>
+
+                    <li><a href="{{ url_for('app_user.logout') }}"><span
+                            class="glyphicon glyphicon glyphicon-log-out"></span>
+                        log out</a>
+
+                    </li>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+
+
+
+

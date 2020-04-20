@@ -1,0 +1,121 @@
+﻿{% if user_name == "游客" and not good_info %}
+<h1>欢迎访问！</h1>
+<div class="jumbotron" style="height:370px">
+    <p>Guide for use</p>
+    <ol>
+        <li><p>register</p></li>
+        <li><p>login</p></li>
+        <li><p>shopping</p></li>
+    </ol>
+   <!--<p><strong>注意：</strong>所有密码至少8位，且包含字母、数字和特殊字符。</p>-->
+</div>
+{% endif %}
+
+
+{% if user_name != "mike_admin" and good_info %}
+<h1>{{ good_info.good_name }} info</h1>
+<div data-spy="scroll" data-target="#navbar-example" data-offset="0"
+     style="height:400px;overflow:auto; position: relative;background-color:WhiteSmoke">
+    <table class="table">
+        <caption></caption>
+        <thead>
+        </thead>
+        <tbody>
+
+        <tr>
+            <td>good id</td>
+            <td>{{ good_info.id }}</td>
+            <td></td>
+
+        </tr>
+
+        <tr>
+            <td>good name</td>
+            <td>{{ good_info.good_name }}</td>
+        </tr>
+
+        <tr>
+            <td>good type</td>
+            <td>{{ good_info.type_name.type_name }}</td>
+        </tr>
+
+        <tr>
+            <td>good price</td>
+            <td>{{ good_info.price }}</td>
+        </tr>
+
+        <tr>
+            <td>good </td>
+            <td>{{ good_info.stock }}</td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+{% endif %}
+
+{% if user_name != "mike_admin" and user_name != "guest" and not good_info %}
+<h1>good class</h1>
+<div style="height:400px">
+    {% if good_types %}
+    <ul>
+        {% for type in good_types %}
+        <li><a href="{{ url_for('app_index.view_by_type',type_name=type) }}">{{ type }}</a></li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</div>
+{% else %}
+{% if user_name == "mike_admin" %}
+<div style="height:450px">
+    <h1 class="text-warning">admin</h1>
+    <ul>
+        <li><a href="{{  url_for('app_good.add')  }}">add good</a></li>
+        <li><a href="{{ url_for('app_goodType.add')  }}">add good type</a></li>
+    </ul>
+    <div data-spy="scroll" data-target="#navbar-example" data-offset="0"
+         style="overflow:auto; position: relative;background-color:WhiteSmoke">
+        {% if good_info %}
+        <div data-spy="scroll" data-target="#navbar-example" data-offset="0"
+             style="overflow:auto; position: relative;background-color:WhiteSmoke">
+            <table class="table">
+                <caption></caption>
+                <thead><h1>{{ good_info.good_name }}info</h1>
+                </thead>
+                <tbody>
+
+                <tr>
+                    <td>good id</td>
+                    <td>{{ good_info.id }}</td>
+
+                </tr>
+
+                <tr>
+                    <td>good name</td>
+                    <td>{{ good_info.good_name }}</td>
+                </tr>
+
+                <tr>
+                    <td>good type</td>
+                    <td>{{ good_info.type_name.type_name }}</td>
+                </tr>
+
+                <tr>
+                    <td>good price</td>
+                    <td>{{ good_info.price }}</td>
+                </tr>
+
+                <tr>
+                    <td>good stock</td>
+                    <td>{{ good_info.stock }}</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+        {% endif %}
+    </div>
+</div>
+{% endif %}
+

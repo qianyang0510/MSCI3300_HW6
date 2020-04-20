@@ -1,0 +1,56 @@
+<div>
+    <form method="POST" class="form-horizontal" role="form">
+        {{ good_form.csrf_token }}
+
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-1">{{ good_form.good_name.label }}</div>
+            <div class="col-sm-4">
+                {{ good_form.good_name(class="form-control", placeholder="ENTER good name") }}
+                <p class="text-warning">
+                    {% for msg in good_form.good_name.errors %}
+                    {{msg}}
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-1">{{ good_form.type.label }}</div>
+            <div class="col-sm-4">
+                {{ good_form.type(class="form-control") }}<a href="{{  url_for('app_goodType.add')  }}">add new good</a>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-1">{{ good_form.price.label }}</div>
+            <div class="col-sm-4">
+                {{ good_form.price(class="form-control", placeholder="enter good price") }}
+                <p class="text-warning">
+                    {% for msg in good_form.price.errors %}
+                    {{msg}}
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-1">{{ good_form.stock.label }}</div>
+            <div class="col-sm-4">
+                {{ good_form.stock(class="form-control", placeholder="enter good stock") }}
+                <p class="text-warning">
+                    {% for msg in good_form.stock.errors %}
+                    {{msg}}
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-4">
+                {{ good_form.submit(class="btn btn-primary") }}
+            </div>
+        </div>
+    </form>
+</div>
+
+

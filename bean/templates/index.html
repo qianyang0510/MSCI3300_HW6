@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title -%}
+{% if user_name == "guest" %}
+index
+
+{% else %}
+{{ user_name }}
+{% endif %}
+{% endblock title %}
+
+{% block body -%}
+<div class="container">
+    {% include "include/navigation.html" %}
+    {% include "index/0_body.html" %}
+    {% include "include/footer.html" %}
+</div>
+{%- endblock body %}
+

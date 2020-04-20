@@ -1,0 +1,47 @@
+﻿{% if user_name == "游客" or user_name == "Admin" %}
+<h1 class="text-info"><span class="glyphicon glyphicon-shopping-cart"></span>商品分类</h1>
+<div style="height:395px">
+    {% if good_types %}
+    <ul>
+        {% for type in good_types %}
+        <li><a href=" {{ url_for('app_index.view_by_type',type_name=type) }}">{{ type }}</a></li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</div>
+
+{% else %}
+<h1>{{ user_name+"的" }}购物车</h1>
+{% if total_money %}
+<p class="text-danger">购物车总额:&nbsp;&nbsp;{{ total_money }}&nbsp;&nbsp;元</p>
+{% endif %}
+<div data-spy="scroll" data-target="#navbar-example" data-offset="0"
+     style="height:370px;overflow:auto; position: relative;background-color:WhiteSmoke">
+    <table class="table">
+        <caption></caption>
+        <thead>
+        <tr>
+            <th>商品编号</th>
+            <th>名称</th>
+            <th>单价（元）</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {% for cart in user.cart %}
+        <tr class="success">
+            <td>{{ cart.goods.id }}</td>
+            <td><a href="{{ url_for('app_good.view',good_id=cart.goods.id) }}  ">{{ cart.goods.good_name }}</a></td>
+            <td>{{ cart.goods.price }}</td>
+            <td>
+                <a href="{{ url_for('app_payment.add',good_name=cart.goods.good_name) }}">付款</a>
+            </td>
+            <td><a href="{{ url_for('app_cart.delete',good_id=cart.goods.id) }}">删除</a></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+
+    </table>
+</div>
+
+{% endif %}

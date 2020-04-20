@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-sm-3" style="background-color:WhiteSmoke;margin:10px;border:0;padding:10px">
+       {% include "index/1_cart.html" %}
+    </div>
+    {% if user_name == "guest" %}
+     <div class="col-sm-5" >
+         <p>welcome!Guest don't have permission</p>
+     </div>
+    {% else %}
+
+    <div class="col-sm-5" style="background-color:WhiteSmoke;margin:10px;border:0;padding:10px">
+        {% include "index/2_view_goods.html" %}
+    </div>
+    {% endif %}
+    <div class="col-sm-3" style="background-color:WhiteSmoke;margin:10px;border:0;padding:10px">
+        {% include "index/3_admin.html" %}
+    </div>
+</div>
+

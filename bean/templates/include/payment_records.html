@@ -1,0 +1,16 @@
+<div>
+    <h1>{{ user.user_name }}pay record</h1>
+\
+    <p class="text-danger">total:&nbsp;&nbsp;{{ total_money }}&nbsp;&nbsp;$</p>
+    <h3 class="text-info">Shopping record</h3>
+    <div data-spy="scroll" data-target="#navbar-example" data-offset="0"
+         style="height:320px;overflow:auto; position: relative;background-color:WhiteSmoke">
+        <ol>
+            {% for payment in user.payments %}
+            <li>
+                <p class="text-left warning">{{ payment.good_pay.good_name }}:&nbsp;&nbsp;{{ payment.good_pay.price }}&nbsp;&nbsp;元</p>
+            </li>
+            {% endfor %}
+        </ol>
+    </div>
+</div>
